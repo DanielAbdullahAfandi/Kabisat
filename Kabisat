@@ -1,0 +1,30 @@
+package kabisat;
+
+/**
+ *
+ * @author Daniel
+ */
+import java.util.Scanner;
+public class Kabisat {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("_________");
+        System.out.println("Tahun Kabisat");
+        System.out.println("_________");
+        System.out.print("Silahkan Masukkan Tahun: ");
+        int Thn = input.nextInt();
+        if((Thn % 4 == 0 && Thn % 100 !=0)|| Thn % 400 == 0){
+            System.out.println(Thn + "Adalah Tahun KABISAT");
+        }
+        else{
+            System.out.println(Thn + "Adalah Bukan Tahun KABISAT");
+        }
+        
+        
+    }
+    
+}
